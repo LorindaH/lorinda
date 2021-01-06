@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,400&family=Bellota:wght@400;700&display=swap');
+
+body{
+    font-family: 'Bellota Text', Helvetica, Arial, 'sans-serif';
+}
+h1 {
+    font-family: 'Bellota', Helvetica, Arial, 'sans-serif';
+    font-size: 2rem;
+}
+h1, .btn-outline-primary, .bg-red h2, .bg-red p, 
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler {
+    color: #fff;
+}
+h1.secondary {
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+    h1 {font-size: 2.5rem}
+    h1.secondary {font-size: 1.8rem;}
+}
+h2 {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+h3 {
+    margin-top: 30px;
+}
+.btn, .bg-red p {
+    font-weight: 700;
+}
+.navbar-brand {
+    background-image: url("images/lorinda-logo.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100;
+    width: 120px;
+    height: 55px;
+}
+@media screen and (min-width: 1200px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: .5rem 1rem;
+    }
+}
+.visually-hidden {
+    position: absolute!important;
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+    white-space: nowrap!important;
+    border: 0!important;
+}
+.bg-red {
+    background-color: #AF231C;
+}
+.bg-grey {
+    background-color: #e4e4e4;
+}
+.btn-outline-primary:hover {
+    background-color: #fff;
+    color: #AF231C;
+}
+.btn-outline-primary, .btn-outline-primary:hover {
+    border-color: #fff;
+}
+.lorinda-path {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: dash 5s linear forwards;
+    fill:none;
+    stroke:#FFFFFF;
+    stroke-width:4;
+    stroke-miterlimit:10;
+}
+@keyframes dash {
+  to {stroke-dashoffset: 0;}
+}
