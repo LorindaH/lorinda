@@ -9,8 +9,9 @@ h1 {
     font-family: 'Bellota', Helvetica, Arial, 'sans-serif';
     font-size: 2rem;
 }
-h1, .btn-outline-primary, .bg-red h2, .bg-red p, 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler {
+h1, .btn-outline-primary, .bg-red h2, .bg-red h3, .bg-red p, 
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler,
+footer a, footer a:hover {
     color: #fff;
 }
 h1.secondary {
@@ -27,7 +28,7 @@ h2 {
 h3 {
     margin-top: 30px;
 }
-.btn, .bg-red p {
+.btn, .bg-red p, .bg-red a {
     font-weight: 700;
 }
 .navbar-brand {
@@ -53,8 +54,16 @@ h3 {
     white-space: nowrap!important;
     border: 0!important;
 }
-.bg-red {
+.btn-primary, .btn-primary:hover, .bg-red {
     background-color: #AF231C;
+    border-color: #AF231C;
+}
+.btn-primary:hover, a:hover img {
+    box-shadow: 5px 8px 26px -8px #2d3134;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 }
 .bg-grey {
     background-color: #e4e4e4;
@@ -77,4 +86,35 @@ h3 {
 }
 @keyframes dash {
   to {stroke-dashoffset: 0;}
+}
+.logo + .logo {
+    margin-left: 40px;
+}
+.logo {
+    height: 90px;
+    width: auto;
+}
+.contnet a:not(btn){
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    color: #212529;
+}
+.contnet a:not(btn):hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+}
+.nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+footer h2 {
+    margin-bottom: 1rem;
+}
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+footer hr {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-top-color: #fff;
 }
