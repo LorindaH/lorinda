@@ -94,12 +94,12 @@ h3 {
     height: 90px;
     width: auto;
 }
-.contnet a:not(btn){
+#content a:not(.btn):not(.image){
     border-bottom-style: dotted;
     border-bottom-width: 1px;
     color: #212529;
 }
-.contnet a:not(btn):hover {
+#content a:not(.btn):not(.image):hover {
     text-decoration: none;
     border-bottom-style: solid;
 }
