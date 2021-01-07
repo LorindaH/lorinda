@@ -118,3 +118,6 @@ footer hr {
     margin-bottom: 30px;
     border-top-color: #fff;
 }
+footer p a:hover {
+    opacity: 0.8;
+}
