@@ -128,7 +128,3 @@ footer .small a + a {
     margin-left: 10px;
     padding-left: 10px;
 }
-/* Google form */
-.freebirdFormviewerViewNavigationPasswordWarning, .freebirdFormviewerViewFooterEmbeddedBackground {
-    display: none;
-}
