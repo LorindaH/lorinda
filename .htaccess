@@ -1,0 +1,4 @@
+#Redirect to non-www location:
+RewriteEngine on
+RewriteCond %{http_host} ^www.lorinda.co.uk [NC]
+RewriteRule ^(.*)$ https://lorinda.co.uk/$1 [L,R=301]
