@@ -8,6 +8,7 @@
     <script src="../js/jquery.min.js"></script>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../custom-style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
     <header>
@@ -65,12 +66,20 @@
                 <p>I test the website across a range of devices and on all major web browsers (Chrome, Firefox, Safari, Internet Explorer and Microsoft Edge). <a href="https://forms.gle/a4XbQFQEDsH7sbkX6" target="_blank" rel="noopener">Fill out my form to get started.</a></p>
             </div>
             <div class="col-sm wow fadeInUp slow" style="padding-top: 60px;">
-                <img class="img-fluid border" src="../images/dev-responsive.jpg" alt="responsive website" title="responsive website"/>
+                <picture>
+                    <source srcset="../images/dev-responsive.jp2" type="image/jp2">
+                    <source srcset="../images/dev-responsive.jpg" type="image/jpeg"> 
+                    <img class="img-fluid border" src="../images/dev-responsive.jpg" alt="responsive website" title="responsive website"/>
+                </picture>
             </div>
         </div>
         <div class="row">
             <div class="col-sm wow fadeInUp slow" style="padding-top: 60px;">
-                <img class="img-fluid border" src="../images/dev-wordpress.jpg" alt="wordpress website admin area" title="wordpress website admin area"/>
+                <picture>
+                    <source srcset="../images/dev-wordpress.jp2" type="image/jp2">
+                    <source srcset="../images/dev-wordpress.jpg" type="image/jpeg"> 
+                    <img class="img-fluid border" src="../images/dev-wordpress.jpg" alt="wordpress website admin area" title="wordpress website admin area"/>
+                </picture>
             </div>
             <div class="col-sm wow fadeInUp">
                 <h2>Content management system</h2>
@@ -91,7 +100,11 @@
                 <a class="btn btn-primary" href="https://forms.gle/a4XbQFQEDsH7sbkX6" target="_blank" rel="noopener">Get Started</a>
             </div>
             <div class="col-sm wow fadeInUp slow" style="padding-top: 60px;">
-                <img class="img-fluid border" src="../images/design-agency.jpg" alt="design agency"/>
+                <picture>
+                    <source srcset="../images/design-agency.jp2" type="image/jp2">
+                    <source srcset="../images/design-agency.jpg" type="image/jpeg"> 
+                    <img class="img-fluid border" src="../images/design-agency.jpg" alt="design agency"/>
+                </picture>
             </div>
         </div>
     </div>
