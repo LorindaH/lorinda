@@ -11,7 +11,7 @@ h1 {
 }
 h1, .btn-outline-primary, .bg-red h2, .bg-red h3, .bg-red p, 
 .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler,
-footer a, footer a:hover {
+footer a, footer a:hover, #content .bg-red a:not(.btn):not(.image) {
     color: #fff;
 }
 h1.secondary {
