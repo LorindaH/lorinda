@@ -92,12 +92,25 @@ h3 {
         stroke-dashoffset: 0;
     }
 }
+footer .logo {
+    float: right;
+}
 .logo + .logo {
     margin-left: 40px;
 }
-.logo {
-    height: 90px;
+footer .logo + .logo {
+    margin-right: 30px;
+}
+footer a.logo img {
+    height: 80px;
     width: auto;
+}
+a.logo img {
+	opacity: 0.8;
+}
+a.logo:hover img {
+    box-shadow: none;
+	opacity: 1;
 }
 #content a:not(.btn):not(.image){
     border-bottom-style: dotted;
