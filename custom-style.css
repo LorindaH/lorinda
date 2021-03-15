@@ -95,15 +95,15 @@ h3 {
 footer .logo {
     float: right;
 }
+.logo, .logo img {
+	max-height: 80px;
+	width: auto;
+}
 .logo + .logo {
     margin-left: 40px;
 }
 footer .logo + .logo {
     margin-right: 30px;
-}
-footer a.logo img {
-    height: 80px;
-    width: auto;
 }
 a.logo img {
 	opacity: 0.8;
