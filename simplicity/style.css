@@ -9,13 +9,14 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: #000;
 	font-size: 16px;
-	font-size: 1rem;
 	line-height: 1.5;
 	padding-top: 90px;
 	padding-left: 0;
+	background-color: #efefef;
 }
-.serif {
+h2, .serif {
 	font-family: 'Playfair Display', serif;
+	font-weight: 700;
 }
 img {
     height: auto;
@@ -210,11 +211,18 @@ ul.main_menu_list {
 		width: calc(100% - 80px);
 	}
 }
-#hero, .hero_overlay, .fadeinout {
-	position: absolute;
-    width: 100%;
-    height: 100vh;
+.overlay {
+	height: 100%;
+	width: 100%;
+}
+#hero, .hero.overlay, .fadeinout {
+	width: 100%;
+    height: 120vh;
 	min-height: 500px;
+	top: 0;
+}
+.overlay, .fadeinout {
+	position: absolute;
 }
 #hero {
 	background-image: url("images/hall-shopping-centre.jpeg");
@@ -225,9 +233,10 @@ ul.main_menu_list {
  	-webkit-animation: fadeinout 8s linear infinite;
     animation: fadeinout 8s linear infinite;
 }
-#hero, .fadeinout {
+#hero, .fadeinout, .carousel .col {
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 @-webkit-keyframes fadeinout {
   0%,100% { opacity: 0; }
@@ -238,14 +247,24 @@ ul.main_menu_list {
   0%,75%,100% { opacity: 0; }
   25%,50% { opacity: 1; }
 }
-.hero_overlay {
+.overlay {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 p {
 	margin: 1rem auto;
 }
+h3 {
+	font-weight: normal;
+	text-transform: capitalize;
+}
+.intro{
+	font-size: 1.5em;
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 60px;
+}
 .hero_box {
-	color: #fff;  
 	width: 80%; 
 	max-width: 340px;
 	min-width: 200px; 
@@ -254,6 +273,9 @@ p {
 	bottom: 40px; 
 	right: 10%; 
 	background-image: linear-gradient(180deg, rgba(26,115,121,0), rgba(26,115,121,0.9) 50%);
+}
+.hero_text {
+	color: #fff;  
 }
 @media only screen and (min-width: 992px){
 	.hide-mob {
@@ -267,4 +289,37 @@ p {
 	.hero_box {
 		width: 30%; 
 	}
+	.intro{
+		font-size: 2em;
+		padding: 120px;
+	}
+	.carousel .col {
+		width: 50%; 
+	}
+}
+.carousel, .carousel .col {
+	height: 380px;
+}
+.carousel .col {
+	width: 100%; 
+	color: #fff; 
+	position: relative; 
+	margin-right: 60px;
+}
+.carousel h2 {
+	width: 100%; padding: 30px; margin: 0; font-size: 3.5em; line-height: 1;
+}
+.carousel-inner{
+	-webkit-animation: carousel 30s linear infinite;
+	animation: carousel 30s linear infinite; 
+	display: flex; 
+	width: 300%;
+}
+@-webkit-keyframes carousel {
+	0% {left: 0;}
+	100% {left: -100%;}
+}
+@keyframes carousel {
+	0% {left: 0;}
+	100% {left: -200%;}
 }
