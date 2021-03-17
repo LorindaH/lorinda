@@ -20,31 +20,37 @@ img {
     max-width: 100%;
 }
 .navigation {
-    height: 100vh;
+    height: 90px;
     position: fixed;
     z-index: 99999;
 	background-color: #fff;
-	min-height: 250px;
 	text-align: center;
-	width: 80px;
+	width: 100%;
+	top: 0;
 }
 .navigation.open {
 	border-right: 2px solid #efefef;
 }
 .menu_button_container {
     color: #000;
-	margin: 60px auto 0 auto;
 	cursor: pointer;
+	position: fixed;
+    right: 20px;
+    width: 80px;
+    height: 70px;
+    top: 20px;
+	margin: 0;
 }
 .site_logo {
     position: absolute;
-    top: 50%;
-	width: 100%;
+    top: 15px;
+	width: 60px;
 	height: 60px;
 	background-image: url("images/simplicity-monogram-black.png");
 	background-repeat: no-repeat;
 	background-size: 60px;
 	background-position: center;
+	left: 30px;
 }
 .menu_overlay {
     position: fixed;
@@ -62,24 +68,16 @@ img {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 200px;
+    width: 100%;
     height: 100%;
     z-index: 999;
     transition: 0.5s;
     color: #fff;
-    display: flex;
-    align-items: center;
 	background-color: #fff;
-	padding-left: 200px;
+	padding-left: 30px;
 }
 .menu_container.open {
     left: 0;
-}
-.menu_flex {
-    align-items: center;
-}
-.flex_split {
-    display: flex;
 }
 .menu_right {
     width: 100%;
@@ -91,6 +89,7 @@ ul.main_menu_list {
     padding: 0;
     margin: 0;
 	list-style: none;
+	margin-top: 60px;
 }
 .main_menu_list li {
 	margin-bottom: 30px;
@@ -103,8 +102,25 @@ ul.main_menu_list {
 	color: #000;
 	text-decoration: underline;
 }
-@media only screen and (max-width: 1240px){
-	
+@media only screen and (min-width: 992px){
+	.navigation {
+    	width: 80px;
+    	height: 100vh;
+		min-height: 250px;
+	}
+	.site_logo {
+		left: 0;
+		top: 50%;
+		width: 100%;
+	}
+	.menu_container {
+		width: 200px;
+		padding-left: 100px;
+	}
+	.menu_button_container {
+		left: 0;
+		top: 60px
+	}
 }
 
 #nav-icon {
