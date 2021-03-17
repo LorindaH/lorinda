@@ -293,33 +293,32 @@ h3 {
 		font-size: 2em;
 		padding: 120px;
 	}
-	.carousel .col {
-		width: 50%; 
+	.carousel-inner{ 
+		width: 300%;
 	}
 }
 .carousel, .carousel .col {
 	height: 380px;
 }
 .carousel .col {
-	width: 100%; 
+	width: 50%;
 	color: #fff; 
 	position: relative; 
 	margin-right: 60px;
 }
 .carousel h2 {
-	width: 100%; padding: 30px; margin: 0; font-size: 3.5em; line-height: 1;
+	width: calc(100% - 60px); padding: 30px; margin: 0; font-size: 3.5em; line-height: 1;
 }
 .carousel-inner{
 	-webkit-animation: carousel 30s linear infinite;
 	animation: carousel 30s linear infinite; 
-	display: flex; 
-	width: 300%;
+	width: 3000px;
 }
 @-webkit-keyframes carousel {
 	0% {left: 0;}
-	100% {left: -100%;}
+	100% {left: -2000px;}
 }
 @keyframes carousel {
 	0% {left: 0;}
-	100% {left: -200%;}
+	100% {left: -2000px;}
 }
