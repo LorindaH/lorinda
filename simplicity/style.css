@@ -11,6 +11,8 @@ body {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+	padding-top: 90px;
+	padding-left: 0;
 }
 .serif {
 	font-family: 'Playfair Display', serif;
@@ -44,11 +46,11 @@ img {
 .site_logo {
     position: absolute;
     top: 15px;
-	width: 60px;
+	width: 200px;
 	height: 60px;
-	background-image: url("images/simplicity-monogram-black.png");
+	background-image: url("images/simplicity-logo-black.png");
 	background-repeat: no-repeat;
-	background-size: 60px;
+	background-size: auto 100%;
 	background-position: center;
 	left: 30px;
 }
@@ -102,7 +104,13 @@ ul.main_menu_list {
 	color: #000;
 	text-decoration: underline;
 }
+.hide-mob {
+	display: none;
+}
 @media only screen and (min-width: 768px){
+	body {
+		padding-top: 0;
+	}
 	.navigation {
     	width: 80px;
     	height: 100vh;
@@ -112,6 +120,8 @@ ul.main_menu_list {
 		left: 0;
 		top: 50%;
 		width: 100%;
+		background-image: url("images/simplicity-monogram-black.png");
+		background-size: 60px;
 	}
 	.menu_container {
 		width: 200px;
@@ -120,7 +130,7 @@ ul.main_menu_list {
 	.menu_button_container {
 		left: 0;
 		top: 60px
-	}
+	}	
 }
 
 #nav-icon {
@@ -188,4 +198,73 @@ ul.main_menu_list {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.row {
+	width: 100%;
+	position: relative;
+}
+@media only screen and (min-width: 768px){
+	.row {
+		margin-left: 80px;
+		width: calc(100% - 80px);
+	}
+}
+#hero, .hero_overlay, .fadeinout {
+	position: absolute;
+    width: 100%;
+    height: 100vh;
+	min-height: 500px;
+}
+#hero {
+	background-image: url("images/hall-shopping-centre.jpeg");
+}
+.fadeinout {
+	display: block;
+	background-image: url("images/header-image.jpg");
+ 	-webkit-animation: fadeinout 8s linear infinite;
+    animation: fadeinout 8s linear infinite;
+}
+#hero, .fadeinout {
+	background-size: cover;
+	background-position: center;
+}
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  25%,50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,75%,100% { opacity: 0; }
+  25%,50% { opacity: 1; }
+}
+.hero_overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+p {
+	margin: 1rem auto;
+}
+.hero_box {
+	color: #fff;  
+	width: 80%; 
+	max-width: 340px;
+	min-width: 200px; 
+	height: calc(100% - 80px); 
+	position: absolute; 
+	bottom: 40px; 
+	right: 10%; 
+	background-image: linear-gradient(180deg, rgba(26,115,121,0), rgba(26,115,121,0.9) 50%);
+}
+@media only screen and (min-width: 992px){
+	.hide-mob {
+		display: block;
+	}
+	.hero_box {
+		width: 50%; 
+	}
+}
+@media only screen and (min-width: 768px){
+	.hero_box {
+		width: 30%; 
+	}
 }
