@@ -28,6 +28,9 @@ img {
 	text-align: center;
 	width: 80px;
 }
+.navigation.open {
+	border-right: 2px solid #efefef;
+}
 .menu_button_container {
     color: #000;
 	margin: 60px auto 0 auto;
@@ -50,18 +53,27 @@ img {
     z-index: 9;
     display: none;
     transition: 1s;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.menu_overlay.show {
+    display: block;
 }
 .menu_container {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 500px;
+    width: 200px;
     height: 100%;
     z-index: 999;
     transition: 0.5s;
     color: #fff;
     display: flex;
     align-items: center;
+	background-color: #fff;
+	padding-left: 200px;
+}
+.menu_container.open {
+    left: 0;
 }
 .menu_flex {
     align-items: center;
@@ -78,6 +90,18 @@ ul.main_menu_list {
     width: 100%;
     padding: 0;
     margin: 0;
+	list-style: none;
+}
+.main_menu_list li {
+	margin-bottom: 30px;
+}
+.main_menu_list a {
+	text-decoration: none;
+	color: #004932;
+}
+.main_menu_list a:hover {
+	color: #000;
+	text-decoration: underline;
 }
 @media only screen and (max-width: 1240px){
 	

@@ -1,19 +1,9 @@
-// JavaScript Document
-//function() {
-//  $(".menu_container").toggleClass("open");
-//}
-//function() {
-//  $(".menu_overlay").toggleClass("show");
-//}
-//(event) => {
-//  icon.classList.toggle("open");
-//}
-//function(t) {
-//  return "undefined" != typeof w && w.event.triggered !== t.type ? w.event.dispatch.apply(e, arguments) : void 0
-//}
-
+// Menu Open
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
+	$("#nav-icon").click(function(){
+		$(".menu_container").toggleClass("open");
+		$(".menu_overlay").toggleClass("show");
+		$(".navigation").toggleClass("open");
 		$(this).toggleClass('open');
 	});
 });
