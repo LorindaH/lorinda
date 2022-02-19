@@ -92,25 +92,24 @@ h3 {
         stroke-dashoffset: 0;
     }
 }
-footer .logo {
-    float: right;
-}
-.logo, .logo img {
+img.logo {
 	max-height: 80px;
 	width: auto;
 }
-.logo + .logo {
-    margin-left: 40px;
+img.logo + img.logo, .logos a + a {
+    margin-left: 30px;
 }
-footer .logo + .logo {
-    margin-right: 30px;
-}
-a.logo img {
+.logos a img {
 	opacity: 0.8;
 }
-a.logo:hover img {
+.logos a:hover img {
     box-shadow: none;
 	opacity: 1;
+}
+@media screen and (min-width: 576px) {
+    footer .logos {
+        text-align: right;
+    }
 }
 #content a:not(.btn):not(.image){
     border-bottom-style: dotted;
