@@ -1,0 +1,4 @@
+# Force HTTPS and remove WWW
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [OR,NC]
+RewriteCond %{HTTPS} off  
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
